@@ -19,48 +19,39 @@ import discord
 
 class Reference:
     botownerlist = [
-        183092910495891467,  # Sloth
-        248790213386567680,  # Austin
+        1346834364415217798,  # Luna
+        196954731384537088,  # Koyomi
     ]
     botdevlist = [
-        389718094270038018,  # FC
-        424843380342784011,  # Oeav
-        183092910495891467,  # Sloth
-        248790213386567680,  # Austin
-        229779964898181120,  # source
+        196954731384537088,  # Koyomi
+        1346834364415217798,  # Luna
     ]
-    guild = 414027124836532234
-    mainbot = 471705718957801483
-    bannsystembot = 697374082509045800
+    guild = 1343332955120205945
+    mainbot = 1352301326951776256
+    bannsystembot = 1352306834580701336
 
     class Roles:
 
-        moderator = 414092550031278091
-        administrator = 414029841101225985
-        kgsofficial = 414954904382210049
-        trainee_mod = 905510680763969536
-        robobird = 414155501518061578
-        stealthbot = 691931822023770132
-        subreddit_mod = 681812574026727471
-        kgsmaintenance = 915629257470906369
+        moderator = 1343332955308818539
+        administrator = 1344631002726793296
+        kgsofficial = 1344632012782178365
+        trainee_mod = 1343332955308818537
+        robobird = 1343332955120205946
+        stealthbot = 1343332955308818542
 
-        patreon_3 = 753258289185161248
-        patreon_2 = 415154206970740737
-        patreon_1 = 753268671107039274
+        nitro_bird = 1344017022517903462
+        contributor = 1343332955271205021
 
-        nitro_bird = 598031301622104095
-        contributor = 476852559311798280
+        galacduck = 1344003570428674078  # GalacDuck
+        legendary_duck = 1344003451855573052  # LegendDuck
+        super_duck = 1344003393294696509  # SuperDuck
+        duck = 1344003336038387875  # Duck
+        smol_duck = 1344003294183292950  # Smol Duck
+        duckling = 1344003239431110687  # Duckling
+        duck_hatchling = 1344003165053522021  # Duck Hatchling
+        duck_egg = 1344003080441827469  # Duck Egg
 
-        galacduck = 698479120878665729  # GalacDuck
-        legendary_duck = 662937489220173884  # LegendDuck
-        super_duck = 637114917178048543  # SuperDuck
-        duck = 637114897544511488  # Duck
-        smol_duck = 637114873268142081  # Smol Duck
-        duckling = 637114849570062347  # Duckling
-        duck_hatchling = 637114722675851302  # Duck Hatchling
-        duck_egg = 821961644425871390  # Duck Egg
-
-        english = 901136119863844864
+        english = 1343332955262550105
 
         @staticmethod
         def admin_and_above():
@@ -80,42 +71,37 @@ class Reference:
             return [Reference.Roles.patreon_1, Reference.Roles.patreon_2, Reference.Roles.patreon_3]
 
     class Categories:
-        moderation = 414095379156434945
-        server_logs = 879399341561892905
+        moderation = 1343332955656949872
+        server_logs = 1343332957288398965
 
     class Channels:
-        general = 1162035011025911889
-        bot_commands = 414452106129571842
-        bot_tests = 414179142020366336
-        new_members = 526882555174191125
+        general = 1343332956634353759
+        bot_commands = 1344695570723241994
+        bot_tests = 1344701667647553668
+        new_members = 1343332956634353759
         humanities = 1162034723758034964
         server_moments = 960927545639972994
         mod_chat = 1092578562608988290
-        social_media_queue = 580354435302031360
-        social_media_feed = 489450008643502080
-        banners_and_topics = 546689491486769163
-        intro_channel = 981620309163655218
-        language_tests = 974333356688965672
-        the_perch = 651461159995834378
+        intro_channel = 1343332956634353766
 
         class Logging:
-            mod_actions = 543884016282239006
-            automod_actions = 966769038879498301
-            message_actions = 879399217511161887
-            member_actions = 939570758903005296
-            dev = 865321589919055882
-            misc_actions = 713107972737204236
-            bannsystem = 1009138597221372044
+            mod_actions = 1343332957594849350
+            automod_actions = 1343332957594849350
+            message_actions = 1343332957288398967
+            member_actions = 1343332957594849351
+            dev = 1343332957288398966
+            misc_actions = 1343332957594849351
+            bannsystem = 1343332957288398966
 
     class Emoji:
-        kgsYes = 955703069516128307
-        kgsNo = 955703108565098496
+        kgsYes = 1345292416021823488
+        kgsNo = 1352312901117022258
 
         class PartialString:
-            kgsYes = "<:kgsYes:955703069516128307>"
-            kgsNo = "<:kgsNo:955703108565098496>"
-            kgsStop = "<:kgsStop:579824947959169024>"
-            kgsWhoAsked = "<:kgsWhoAsked:754871694467924070>"
+            kgsYes = "<:BlobYes:1345292416021823488>"
+            kgsNo = "<:blobno:1352312901117022258>"
+            kgsStop = "<:Stop_Sign:1352313646814068856>"
+            kgsWhoAsked = "<:sorry_who_asked:1352314101405192243> "
 
         @staticmethod
         async def fetch(client: discord.Client, ref: int) -> discord.Emoji | None:
